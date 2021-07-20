@@ -1,9 +1,4 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
-</p>
-
-<h3 align="center">Migrapp API</h3>
+<h1 align="center">Migrapp API</h1>
 
 <div align="center">
 

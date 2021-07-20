@@ -1,7 +1,7 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
-import { indexRouter } from "./routes/index.js";
+import { indexRouter } from "./routes/cities.js";
 import { usersRouter } from "./routes/users.js";
 
 const app = express();
