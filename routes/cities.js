@@ -1,10 +1,12 @@
 import express from "express";
 
 const router = express.Router();
-/* GET cities list */
+
+/* GET cities listing. */
 router.get("/", function (req, res, next) {
   res.setHeader("Content-Type", "application/json");
-  res.end(JSON.stringify({ "status-code": 200 }));
+  res.status(200);
+  res.end(JSON.stringify({ message: "Retrieved list of clients" }));
 });
 
-export { router as indexRouter };
+export { router as citiesRouter };

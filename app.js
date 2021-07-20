@@ -1,7 +1,8 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
-import { indexRouter } from "./routes/cities.js";
+import { errorRouter } from "./routes/error.js";
+import { citiesRouter } from "./routes/cities.js";
 import { usersRouter } from "./routes/users.js";
 
 const app = express();
@@ -11,7 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use("/", indexRouter);
+app.use("/", errorRouter);
+app.use("/cities", citiesRouter);
 app.use("/users", usersRouter);
 
 // catch 404 and forward to error handler
